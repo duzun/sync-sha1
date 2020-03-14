@@ -1,0 +1,68 @@
+{
+  "name": "sync-sha1",
+  "version": "1.0.0",
+  "description": "Tiny sha1 in JavaScript",
+  "reveal": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "module": "sha1.js",
+  "main": "dist/sha1.js",
+  "unpkg": "dist/sha1.min.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "npx mocha --reporter spec",
+    "coverage": "npx nyc --reporter=lcov --reporter=text-summary npm run test",
+    "verup": "npx verup",
+    "jest": "npx jest",
+    "jest:watch": "npx jest --watch",
+    "jest:cov": "npx jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duzun/sync-sha1.git"
+  },
+  "keywords": [
+    "sha1",
+    "js",
+    "javascript"
+  ],
+  "author": "Dumitru Uzun <contact@duzun.me> (https://DUzun.Me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duzun/sync-sha1/issues"
+  },
+  "homepage": "https://github.com/duzun/sync-sha1#readme",
+  "dependencies": {
+    "jest": "^25.1.0",
+    "string-encode": "^0.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "mocha": "^6.2.2",
+    "require-json6": "^1.1.0",
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^5.3.0"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "jshintConfig": {
+    "esversion": 9,
+    "laxbreak": true,
+    "laxcomma": true,
+    "undef": true,
+    "unused": true,
+    "sub": true,
+    "expr": true,
+    "bitwise": false,
+    "eqeqeq": false,
+    "boss": true,
+    "eqnull": true,
+    "scripturl": true,
+    "-W041": false
+  }
+}
