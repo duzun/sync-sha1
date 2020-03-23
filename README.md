@@ -1,6 +1,6 @@
-# sync-sha1
+# sync-sha1 [![Build Status](https://travis-ci.org/duzun/sync-sha1.svg?branch=master)](https://travis-ci.org/duzun/sync-sha1)
 
-Tiny sha1 in JavaScript
+Synchronous sha1 in JavaScript
 
 Shamelessly stolen from [jbt/tiny-hashes](https://github.com/jbt/tiny-hashes) and improved.
 

@@ -1,6 +1,6 @@
 {
   "name": "sync-sha1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny sha1 in JavaScript",
   "reveal": true,
   "publishConfig": {
@@ -9,6 +9,15 @@
   "module": "sha1.js",
   "main": "dist/sha1.js",
   "unpkg": "dist/sha1.min.js",
+  "files": [
+    "rawSha1.js",
+    "sha1.js",
+    "subtleHash.js",
+    "asyncSha1.js",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "test": "npx mocha --reporter spec",
@@ -34,12 +43,11 @@
   },
   "homepage": "https://github.com/duzun/sync-sha1#readme",
   "dependencies": {
-    "jest": "^25.1.0",
     "string-encode": "^0.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "chai": "^4.2.0",
     "esm": "^3.2.25",
@@ -64,5 +72,14 @@
     "eqnull": true,
     "scripturl": true,
     "-W041": false
+  },
+  "extra": {
+    "verup": {
+      "files": [
+        "sha1.js",
+        "asyncSha1.js",
+        "README.md"
+      ]
+    }
   }
 }
